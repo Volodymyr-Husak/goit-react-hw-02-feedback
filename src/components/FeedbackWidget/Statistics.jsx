@@ -1,4 +1,4 @@
-
+import css from './Feedback.module.css'
 import propTypes from 'prop-types';
 
 export const Statistics = ({
@@ -9,7 +9,7 @@ export const Statistics = ({
   countPositiveFeedbackPercentage,
 }) => {
   return (
-    <ul>
+    <ul className={css.statistics_list}>
       <li>
         <p>Goog: {good}</p>
       </li>
